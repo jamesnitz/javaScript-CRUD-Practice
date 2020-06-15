@@ -1,6 +1,7 @@
+import settings from "./Settings.js"
 export const mappy = () => {
   const eventHub = document.querySelector(".container");
-  mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNuaXR6IiwiYSI6ImNrYmdpdzFrdzE2MTcyb21rOW92dG9laWYifQ.shmWe90XzNgEIWPgdK2nVw';
+  mapboxgl.accessToken = settings.mapToken;
   var map = new mapboxgl.Map({
   container: 'mapbox',
   style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
